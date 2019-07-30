@@ -6,6 +6,7 @@ var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
 var input = process.argv;
 var fs = require("fs");
+const inquirer = require('inquirer');
 
 if (input[2] === "concert-this") {
     // console.log(input[3])
